@@ -4,16 +4,11 @@ export default class Dice extends React.Component {
 
     render() {
         return (
-            <div className="dice" onClick={() => this.roll()}>
+            <div className="dice" onClick={() => this.props.click()}>
                 {this.props.value}
                 
             </div>
         );
-    }
-
-    roll() {
-        console.log("clicked")
-        this.props.click();
     }
 
 }
